@@ -19,7 +19,7 @@ function App() {
         >
           Learn React
         </a>
-        <p>{{a: 1, b: 2}}</p>
+        {/* <p>{ name }</p> */}
       </header>
       
     </div>
