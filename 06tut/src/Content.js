@@ -2,7 +2,10 @@ import { useState } from 'react'
 
 
 const Content = () => {
-  // useState usage part 
+  
+/*
+  useState usage part
+*/
   const [name, setName ] = useState('Lionel');
 
   const handleNameChange = () => {
