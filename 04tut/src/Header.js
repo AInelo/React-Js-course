@@ -6,7 +6,9 @@ const Header = () => {
    
     
     return (
-        <header>
+        <header style={{
+            background
+        }} >
             <h1>Groceries List</h1>
       </header>
         

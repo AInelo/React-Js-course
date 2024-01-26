@@ -1,4 +1,4 @@
-# Functionnal Components
+# Applying css Styles
 
 1. How to Add functionnal components
  a. Create the file Function.js
@@ -12,4 +12,4 @@
         )
     }
     export default Function;
- ```
+```
