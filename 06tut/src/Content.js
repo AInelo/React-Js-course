@@ -1,8 +1,14 @@
+import { useState } from 'react'
+
 
 const Content = () => {
+  // useState usage part 
+  const [name, setName ] = useState('Lionel');
+
   const handleNameChange = () => {
     const names = ['Bob', 'Axel', 'Lionel'];
     const int = Math.floor(Math.random() * 3);
+    setName(names[int]) 
     return names[int]
   }
 
@@ -21,12 +27,11 @@ const Content = () => {
 
     return (
         <main>
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
             <p onDoubleClick={handleClick}>
-              Hello World {handleNameChange()}!
+              Hello World {name}!
             </p>
-            <button onClick={handleClick} >
-              Click it
+            <button onClick={handleNameChange} >
+              Change name
             </button>
 
             <button onClick={ () => handleClick2('Lionel')} >
