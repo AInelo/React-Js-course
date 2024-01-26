@@ -6,7 +6,7 @@ const Content = () => {
   const [name, setName ] = useState('Lionel');
 
   const handleNameChange = () => {
-    const names = ['Bob', 'Axel', 'Lionel'];
+    const names = ['Bobe', 'Axel', 'Lionel'];
     const int = Math.floor(Math.random() * 3);
     setName(names[int]) 
     return names[int]
