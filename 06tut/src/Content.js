@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 
 const Content = () => {
-  
 /*
   useState usage part
 */
