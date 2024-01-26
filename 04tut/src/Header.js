@@ -1,8 +1,7 @@
 
-// import './App.css';
 const Header = () => {
     const hearderStyle = {
-        backgroundColor: 'mediumblue', 
+        backgroundColor: 'royalblue', 
         color: '#fff'
 
     };
