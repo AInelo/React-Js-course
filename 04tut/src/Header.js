@@ -1,14 +1,15 @@
 
 // import './App.css';
-
-
 const Header = () => {
+    const hearderStyle = {
+        backgroundColor: 'mediumblue', 
+        color: '#fff'
+
+    };
    
     
     return (
-        <header style={{
-            background
-        }} >
+        <header style={hearderStyle} >
             <h1>Groceries List</h1>
       </header>
         
