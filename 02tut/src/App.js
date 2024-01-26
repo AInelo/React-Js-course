@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  const name = "Lionel";
+  const name = "Lionelo";
 
   return (
     <div className="App">
@@ -19,7 +19,9 @@ function App() {
         >
           Learn React
         </a>
+        <p>{{a: 1, b: 2}}</p>
       </header>
+      
     </div>
   );
 }
