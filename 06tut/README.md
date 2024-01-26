@@ -3,3 +3,14 @@
 1. What does the useState :
 The useState is a way that React use to change the state of an element 
 before render it in  the DOM 
+
+2. Meaning of "useState"
+
+The useState is the way of state changing 
+
+```bash
+import { useState } from 'react';
+
+  const [name, setName ] = useState('Lionel');
+
+```
