@@ -6,10 +6,8 @@ const Header = () => {
    
     
     return (
-        <header className="App-header">
+        <header>
             <h1>Groceries List</h1>
-        
-        
       </header>
         
     )
