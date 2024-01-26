@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# APP AND JSX
 
 1. Remarke 
 We can render an object like in React and a boolean
