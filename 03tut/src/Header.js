@@ -4,7 +4,7 @@ import './App.css';
 
 
 const Header = () => {
-    const name = "Lionel";
+    //const name = "Lionel";
   const handleNameChange = () => {
     const names = ['Bob', 'Axel', 'Lionel'];
     const int = Math.floor(Math.random() * 3);
@@ -23,5 +23,7 @@ const Header = () => {
         
     )
 }
+
+
 
 export default Header;
