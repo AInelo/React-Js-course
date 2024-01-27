@@ -9,18 +9,18 @@ const Content = () => {
   const [items, setItems ] = useState([
     {
       id: 1,
-      checked: true,
+      checked: false,
       item: "One half pound bag of Cocoa Covered"
     },
     {
       id: 2,
       checked: false,
-      item: "Item 2",
+      item: "Item 2 Lionel",
     },
     {
       id: 3,
       checked: false,
-      item: "Item 3",
+      item: "Item 3 For Lionel",
     }
   ]);
 
@@ -43,26 +43,30 @@ const Content = () => {
 
     return (
         <main>
-           <ul>
-              {items.map((item) => (
-                <li className='item' key={item.id} >
-                    <input 
-                      type="checkbox"
-                      onChange={() => handleCheck(item.id)}
-                      checked={item.checked}
-                    />
-                    <label
-                      style= {(item.checked) ? {textDecoration: 'line-through'} : null}
-                      onDoubleClick = {() => handleCheck(item.id)}
-                    >{item.item}</label>
-                    <FaTrashAlt 
-                      onClick={ () => handleDelete(item.id)}
-                      role='button' 
-                      tabIndex="0" 
-                    />
-                </li>
-              ))}
-           </ul>
+          {items.length ? (
+              <ul>
+                  {items.map((item) => (
+                    <li className='item' key={item.id} >
+                        <input 
+                          type="checkbox"
+                          onChange={() => handleCheck(item.id)}
+                          checked={item.checked}
+                        />
+                        <label
+                          style= {(item.checked) ? {textDecoration: 'line-through'} : null}
+                          onDoubleClick = {() => handleCheck(item.id)}
+                        >{item.item}</label>
+                        <FaTrashAlt 
+                          onClick={ () => handleDelete(item.id)}
+                          role='button' 
+                          tabIndex="0" 
+                        />
+                    </li>
+                  ))}
+              </ul>
+           ) : (
+            <p style={{marginTop: '2rem'}} >Your list is empty.</p>
+           )}
         </main>
     )
 }
