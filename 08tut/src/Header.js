@@ -14,4 +14,15 @@ const Header = ({title}) => {
         
     )
 }
+
+
+// When the component doesn't receive any Props of Parent component,
+// It will use the default Props here
+
+Header.defaultProps = {
+    title: "Default title"
+}
+
+
+
 export default Header;
