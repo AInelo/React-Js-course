@@ -1,4 +1,4 @@
-# Prop Drilling
+# Prop Drilling (permet de découpé les composants en de tout petit composant)
 
 1.
 Le Prop Drilling, également appelé "lifting state up" en React, est un modèle de gestion de l'état dans une application React où les données (ou l'état) sont transmises de composant parent à composant enfant via les props. Cela peut être nécessaire lorsque plusieurs composants ont besoin d'accéder ou de modifier la même donnée.
