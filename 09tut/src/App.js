@@ -25,6 +25,8 @@ function App() {
     }
   ]);
 
+  const [newItem, setNewItem] = useState('')
+
   const handleCheck = (id) => {
     console.log(`key: ${id}`);
     // const listItems = items.map
@@ -41,16 +43,26 @@ function App() {
     localStorage.setItem('shoppinglist', JSON.stringify(listItems));
   }
 
+  const handleSubmit = (e) => {
+    console.log('submitted')
+  }
+
+
+
+
   return (
     <div className="App">
       <Header title="Grocery List" />
-      <AddItem />
+      <AddItem 
+        newItem={newItem}
+        setNewItem={setNewItem}
+        handleSubmit={handleSubmit}
+      />
       <Content 
         items={items}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
-        />
-
+      />
       <Footer length={items.length} />
     </div>
   );
