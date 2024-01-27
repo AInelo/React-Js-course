@@ -5,47 +5,39 @@ const Content = () => {
 /*
   This is useState usage part
 */
-  const [name, setName ] = useState('Lionel');
-  const [count, setCount] = useState(0);
-
-  const handleNameChange = () => {
-    const names = ['Bobe', 'Axel', 'Lionel'];
-    const int = Math.floor(Math.random() * 3);
-    setName(names[int]) 
-    return names[int]
-  }
-
-  const handleClick = () => {
-    setCount(count + 1);
-    setCount(count + 1);    
-    console.log(count)
-  }
-
-  const handleClick2 = (name) => {
-    console.log(count)
-  }
-
-  // const handleClick3 = (e) => {
-  //   console.log(e.target.innerText)
-  // }
-
+  const [items, setItems ] = useState([
+    {
+      id: 1,
+      checked: false,
+      item: "One half pound bag of Cocoa Covered"
+    },
+    {
+      id: 2,
+      checked: false,
+      item: "Item 2",
+    },
+    {
+      id: 3,
+      checked: false,
+      item: "Item 3",
+    }
+  ]);
+  
 
     return (
         <main>
-            <p onDoubleClick={handleClick}>
-              Hello World {name}!
-            </p>
-            <button onClick={handleNameChange} >
-              Change name
-            </button>
-
-            <button onClick={handleClick} >
-              Click it
-            </button>
-
-            <button onClick={handleClick2} >
-              Click it
-            </button>
+           <ul>
+              {items.map((item) => (
+                <li className='item' key={item.id} >
+                    <input 
+                      type="checkbox"
+                      checked={item.checked}
+                    />
+                    <label>{item.item}</label>
+                    <button>Delete</button>
+                </li>
+              ))}
+           </ul>
         </main>
     )
 }
