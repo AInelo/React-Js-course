@@ -1,5 +1,5 @@
 
-const Header = () => {
+const Header = ({title}) => {
     const hearderStyle = {
         backgroundColor: 'royalblue', 
         color: '#fff'
@@ -9,8 +9,8 @@ const Header = () => {
     
     return (
         <header style={hearderStyle} >
-            <h1>Groceries List</h1>
-      </header>
+            <h1>{title}</h1>
+        </header>
         
     )
 }
