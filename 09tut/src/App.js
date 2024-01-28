@@ -68,7 +68,8 @@ function App() {
       />
 
       <Content 
-        items={items}
+      // Code pour filtrer et faire la recherche des éléments
+        items={items.filter(item => ((item.item).toLowerCase()).includes(search.toLocaleLowerCase()))}
         handleCheck={handleCheck}
         handleDelete={handleDelete}
       />
