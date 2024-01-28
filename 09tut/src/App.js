@@ -43,7 +43,7 @@ function App() {
     console.log(newItem)
     // addItem function
     addItem(newItem);
-    console.log('');
+    console.log(items);
   }
 
 
