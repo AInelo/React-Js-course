@@ -45,6 +45,8 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!newItem) return;
+    // addItem function
     console.log('submitted')
   }
 
