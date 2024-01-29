@@ -47,7 +47,7 @@ function App() {
     console.log(newItem)
     // addItem function
     addItem(newItem);
-    console.log(items);
+    setNewItem('');
   }
 
 
