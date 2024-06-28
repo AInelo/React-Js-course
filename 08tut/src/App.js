@@ -22,6 +22,11 @@ function App() {
       id: 3,
       checked: false,
       item: "Item 3 For Lionel",
+    },
+    {
+      id: 4,
+      checked: false,
+      item: "Item 4 For Lionel",
     }
   ]);
 
@@ -43,7 +48,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="Grocery List" />
+      <Header title="Lionel List" />
 
       <Content 
         items={items}

@@ -21,11 +21,16 @@ const Content = () => {
       id: 3,
       checked: false,
       item: "Item 3 For Lionel",
+    },
+    {
+      id: 4,
+      checked: false,
+      item: "Item 4 For Lionel",
     }
   ]);
 
   const handleCheck = (id) => {
-    console.log(`key: ${id}`);
+    console.log(`key is : ${id}`);
     // const listItems = items.map
     // const listItems = [...items]
     const listItems = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item);

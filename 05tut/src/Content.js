@@ -34,7 +34,7 @@ const Content = () => {
             </button>
 
             <button onClick={(e) => handleClick3(e)} >
-              Click it
+              Click it test
             </button>
         </main>
     )

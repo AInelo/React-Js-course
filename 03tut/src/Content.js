@@ -1,4 +1,4 @@
-// import logo from './logo.svg';
+import logo from './logo.svg';
 import './App.css';
 
 const Content = () => {
@@ -10,7 +10,7 @@ const Content = () => {
   }
     return (
         <main>
-            {/* <img src={logo} className="App-logo" alt="logo" /> */}
+            <img src={logo} className="App-logo" alt="logo" />
             <p>
             Hello World {handleNameChange()}!
             </p>
