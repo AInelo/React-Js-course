@@ -10,7 +10,7 @@ import AddItem from './AddItems';
 
 function App() {
 
-  const [items, setItems ] = useState(JSON.parse(localStorage.getItem('shoppinglist')));
+  const [items, setItems ] = useState(JSON.parse(localStorage.getItem('shoppinglist')) || []);
 
   const [newItem, setNewItem] = useState('');
 
